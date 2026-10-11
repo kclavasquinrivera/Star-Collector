@@ -2,9 +2,9 @@
 
 A browser-based 2D platformer built with JavaScript and the Phaser 3 game framework. Run, jump across platforms, collect stars, and avoid the bombs that appear as the game gets harder.
 
-
-
 ## Overview
+
+[Watch the Geometric Pattern Animation](Screen%20Recording%202026-10-10%20161636.mp4)
 
 The player controls a character on a set of platforms while stars fall from the top of the screen. Every star collected adds points to the score. When all the stars have been collected, they respawn and a new bomb is released, so each round is harder than the last. Touching a bomb ends the game, and the player can restart and try to beat their previous score.
 
