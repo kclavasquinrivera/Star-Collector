@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Collector - Phaser Game</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>Star Collector</h1>
+            <p class="game-subtitle">Recolecta todas las estrellas y evita las bombas</p>
+        </header>
+
+        <div id="game-wrapper">
+            <div id="phaser-game"></div>
+        </div>
+
+        <footer class="game-footer">
+            <div class="controls-info">
+                <h3>Controles</h3>
+                <div class="controls-grid">
+                    <div class="control-item">
+                        <span class="key">←</span>
+                        <span class="description">Mover izquierda</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">→</span>
+                        <span class="description">Mover derecha</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">↑</span>
+                        <span class="description">Saltar</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">SPACE</span>
+                        <span class="description">Reiniciar</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.55.2/phaser.min.js"></script>
+    <script src="src/script.js"></script>
+</body>
+</html>
