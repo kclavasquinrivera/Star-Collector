@@ -6,9 +6,9 @@ let config = {
     physics: {
         default: 'arcade',
         arcade: {
-            gravity: { y: 500 }, // Aumento de la gravedad para hacer las caídas más naturales
+            gravity: { y: 500 },
             debug: false,
-            // Asegurándonos de que las interacciones físicas no sean demasiado exageradas
+
             worldBounds: true,
         }
     },
@@ -29,7 +29,7 @@ let stars;
 let bombs;
 let game;
 
-// Inicializar el juego cuando la página esté lista
+
 window.onload = function() {
     console.log('Inicializando Phaser...');
     console.log('Contenedor:', document.getElementById('phaser-game'));
@@ -47,7 +47,7 @@ function preload() {
 function create() {
     this.add.image(400, 300, 'sky');
 
-    // Ajustar plataformas para que el jugador no pase a través de ellas
+
     platforms = this.physics.add.staticGroup();
 
     platforms.create(400, 568, 'ground').setScale(2).refreshBody();
@@ -57,10 +57,10 @@ function create() {
 
     player = this.physics.add.sprite(100, 450, 'dude');
 
-    // Ajustes del jugador para una mejor física
+
     player.setCollideWorldBounds(true);
-    player.setBounce(0.1);  // Menos rebote para un movimiento más natural
-    player.setDrag(0.4);  // Ajuste para la fricción del jugador (mejor control al moverse)
+    player.setBounce(0.1);
+    player.setDrag(0.4);
 
     this.anims.create({
         key: 'left',
@@ -121,7 +121,7 @@ function create() {
 function update() {
     if (gameOver) {
         if (this.input.keyboard.checkDown(cursors.space, 500)) {
-            restartGame(this);  // Pasar 'this' como parámetro
+            restartGame(this);
         }
         return;
     }
@@ -137,7 +137,7 @@ function update() {
     }
 
     if (cursors.up.isDown && player.body.touching.down) {
-        player.setVelocityY(-500);  // Ajustar salto para hacerlo más natural
+        player.setVelocityY(-500);
     }
 }
 
