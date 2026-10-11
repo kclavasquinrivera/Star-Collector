@@ -104,9 +104,3 @@ Through this project, I practiced:
 
 I built this game to learn the fundamentals of 2D game development for the web: the game loop, physics, collisions, animation, and player input. The project follows the structure of Phaser's official "Making your first Phaser 3 game" tutorial, and I added my own page layout, styling, and physics adjustments. I published it on GitHub to document my progress and continue developing my software engineering skills.
 
-## Credits
-
-* Game framework: [Phaser](https://phaser.io)
-* Game concept and sprite assets: Phaser 3 tutorial "Making your first Phaser 3 game"
-
-**Note:** This is an educational project and is not intended for production use.
