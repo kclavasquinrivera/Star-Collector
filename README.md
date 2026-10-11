@@ -1,7 +1,3 @@
-# Star Collector
-
-A browser-based 2D platformer built with JavaScript and the Phaser 3 game framework. Run, jump across platforms, collect stars, and avoid the bombs that appear as the game gets harder.
-
 ## Overview
 
 [Watch Star Collector Gameplay](Recording%202026-10-10%20212446.mp4)
